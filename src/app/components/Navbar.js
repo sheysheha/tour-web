@@ -98,7 +98,7 @@ export default function Navbar() {
                 </div>
               </div> */}
               <Link href="/tour-packages" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50 transition-colors">Tour Packages</Link> 
-              <Link href="/wish" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50 transition-colors">Bookings</Link> 
+              {/* <Link href="/wish" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50 transition-colors">Bookings</Link>  */}
               <Link href="/about" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50 transition-colors">About Us</Link> 
               <Link href="/wish" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50 transition-colors">Contact</Link> 
             </div>
@@ -166,7 +166,7 @@ export default function Navbar() {
                   )}
                 </div>
                 
-                <Link href="/wish" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50">Bookings</Link> 
+                {/* <Link href="/wish" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50">Bookings</Link>  */}
                 <Link href="/about" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50">About Us</Link> 
                 <Link href="/wish" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50">Contact</Link> 
                 

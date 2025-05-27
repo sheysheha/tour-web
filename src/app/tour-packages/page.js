@@ -428,7 +428,7 @@ export default function page() {
                                     </select>
                                 </div>
                                 {/* Price Filter */}
-                                <div className="mb-6">
+                                {/* <div className="mb-6">
                                     <label className="block text-sm font-medium text-gray-700 mb-2">Price Range</label>
                                     <select
                                         value={filters.price}
@@ -440,8 +440,8 @@ export default function page() {
                                         <option value="standard">Standard ($500-$800)</option>
                                         <option value="luxury">Luxury (Over $800)</option>
                                     </select>
-                                </div>
-                                {/* Reset Button */}
+                                </div> */}
+                            
                                 <div className="flex justify-end">
                                     <button
                                         onClick={resetFilters}
@@ -480,7 +480,7 @@ export default function page() {
                                 <div className="flex items-center text-sm text-gray-500 mb-2">
                                     <Star className="mr-1" /> {tour.rating} / 5
                                 </div>
-                                <p className="text-lg font-bold text-green-600 mb-4">${tour.price}</p>
+                                {/* <p className="text-lg font-bold text-green-600 mb-4">${tour.price}</p> */}
                                 <Link href={`/tours/${tour.id}`} className="bg-emerald-600 text-white px-4 py-2 rounded-lg block text-center">View Details</Link>
                             </div>
                         </div>

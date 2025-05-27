@@ -553,9 +553,9 @@ export default function Home() {
                 layout="fill"
                 objectFit="cover"
               />
-              <div className="absolute bottom-0 left-0 bg-cyan-600 text-white px-4 py-2 rounded-tr-lg font-semibold">
+              {/* <div className="absolute bottom-0 left-0 bg-cyan-600 text-white px-4 py-2 rounded-tr-lg font-semibold">
                 {pkg.price}
-              </div>
+              </div> */}
             </div>
             <div className="p-6">
               <h3 className="text-xl font-bold text-cyan-800 mb-2">{pkg.title}</h3>
