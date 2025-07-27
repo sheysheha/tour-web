@@ -23,11 +23,11 @@ export default function Navbar() {
             <div className="flex items-center space-x-8">
               <div className="flex items-center">
                 <Phone size={16} className="mr-1" />
-                <span>+94 764 944 774</span>
+                <span>+94 777 314 775</span>
               </div>
               <div className="hidden sm:flex items-center">
                 <Mail size={16} className="mr-1" />
-                <span>info@laplankatours.com</span>
+                <span>laplankatours@gmail.com</span>
               </div>
             </div>
             <div className="flex items-center space-x-3">
@@ -48,7 +48,7 @@ export default function Navbar() {
       {/* Main Navigation */}
       <nav className="bg-white shadow-md sticky top-0 z-50">
         <div className=" mx-auto px-8">
-          <div className="flex justify-between items-center py-4">
+          <div className="flex justify-between items-center py-[10px]">
             {/* Logo */}
             <div className="flex items-center space-x-2">
               <div className="w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center">
