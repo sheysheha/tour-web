@@ -1,0 +1,104 @@
+[
+  {
+    "title": "Anuradhapura – The Ancient Kingdom of Timeless Splendor",
+    "slug": "anuradhapura",
+    "description": "Step into Sri Lanka’s first capital—home to sacred Bodhi trees, towering stupas, and one of the oldest Buddhist civilizations.",
+    "content": [
+    "Anuradhapura is one of the greatest monastic cities the world has ever seen. A UNESCO World Heritage Site, it features age-old ruins, colossal stupas, sacred bodhi trees, and serene reservoirs that speak of a glorious civilization from over two millennia ago.Founded in the 4th century BCE, Anuradhapura was Sri Lanka’s political and spiritual center for over 1,300 years. It remains a sacred pilgrimage site for Buddhists and a captivating destination for cultural travelers.",
+    "At the heart of Anuradhapura lies the Sri Maha Bodhi, the oldest recorded living tree, grown from the very tree under which Lord Buddha attained enlightenment.Massive stupas such as Ruwanwelisaya, Jetavanaramaya, and Abhayagiri dominate the skyline. These architectural marvels continue to inspire awe with their scale, symmetry, and spiritual presence.",
+    "Explore the Ancient Citadel’s royal ruins palaces, moonstones, audience halls, bathing pools and marvel at artistic highlights like the Twin Ponds and the Samadhi Buddha statue.Ingenious reservoirs such as Tissa Wewa and Nuwara Wewa reveal the advanced hydraulic engineering that sustained this ancient civilization.Anuradhapura offers peaceful landscapes, spiritual depth, and rich history for every traveler whether you're a spiritual seeker, history lover, or cultural explorer.",
+    "Let LAP Lanka Tours be your guide through this timeless kingdom, where ancient wisdom lives on and the spirit of paradise is written in stone."
+  ],
+    "tags": ["cultural", "heritage", "ancient city"],
+    "region": "North Central",
+    "images": ["/anuradhapura-sri-lanka.jpg","/anupura.jpg"]
+  },
+  {
+    "title": "Polonnaruwa – The Timeless Kingdom of Stone and Glory",
+    "slug": "polonnaruwa",
+    "description": "Explore royal ruins, rock-carved Buddhas, and ancient reservoirs in Sri Lanka’s medieval capital and UNESCO site.",
+    "tags": ["history", "ruins", "UNESCO"],
+    "region": "North Central",
+    "images": ["/images/polonnaruwa.jpg"]
+  },
+  {
+    "title": "Dambulla – A Sacred Sanctuary in the Cultural Triangle",
+    "slug": "dambulla",
+    "description": "Discover Sri Lanka’s largest cave temple complex, ancient murals, and panoramic views from this cultural centerpiece.",
+    "tags": ["temple", "UNESCO", "spiritual"],
+    "region": "Central",
+    "images": ["/images/dambulla.jpg"]
+  },
+  {
+    "title": "Sigiriya – The Lion Rock Fortress of Legends",
+    "slug": "sigiriya",
+    "description": "Climb Sigiriya Rock Fortress, explore ancient water gardens, and marvel at frescoes and royal ruins above the clouds.",
+    "tags": ["fortress", "hiking", "UNESCO"],
+    "region": "Central",
+    "images": ["/images/sigiriya.jpg"]
+  },
+  {
+    "title": "Kandy – The Cultural Heartbeat of Sri Lanka",
+    "slug": "kandy",
+    "description": "Visit the Temple of the Tooth, enjoy lakeside strolls, and witness cultural dance in Sri Lanka’s spiritual capital.",
+    "tags": ["temple", "culture", "UNESCO"],
+    "region": "Central",
+    "images": ["/images/kandy.jpg"]
+  },
+  {
+    "title": "Nuwara Eliya – The Misty Hills of Paradise",
+    "slug": "nuwara-eliya",
+    "description": "Escape to cool highlands, sip Ceylon tea, and explore lakes and gardens in Sri Lanka’s ‘Little England’.",
+    "tags": ["tea", "hills", "colonial"],
+    "region": "Central",
+    "images": ["/images/nuwara-eliya.jpg"]
+  },
+  {
+    "title": "Ella – A Scenic Paradise in the Heart of Sri Lanka",
+    "slug": "ella",
+    "description": "Experience mountain treks, train rides, and myths of Ravana in this lush, laid-back village in the hill country.",
+    "tags": ["hiking", "views", "legends"],
+    "region": "Central",
+    "images": ["/images/ella.jpg"]
+  },
+  {
+    "title": "Galle – A Timeless Coastal Treasure",
+    "slug": "galle",
+    "description": "Walk through Galle Fort’s colonial streets, shop boutiques, and enjoy sunsets over the southern coast.",
+    "tags": ["fort", "colonial", "beach"],
+    "region": "Southern",
+    "images": ["/images/galle.jpg"]
+  },
+  {
+    "title": "Mirissa – Sri Lanka’s Tropical Escape by the Sea",
+    "slug": "mirissa",
+    "description": "Go whale watching, relax on golden beaches, and catch sunsets at Coconut Tree Hill in this beach lover’s paradise.",
+    "tags": ["beach", "whales", "sunset"],
+    "region": "Southern",
+    "images": ["/images/mirissa.jpg"]
+  },
+  {
+    "title": "Hikkaduwa – Where Tropical Vibes Meet Coastal Charm",
+    "slug": "hikkaduwa",
+    "description": "Snorkel coral reefs, ride waves, and discover a lively beach town with marine sanctuaries and relaxed nightlife.",
+    "tags": ["beach", "snorkeling", "surf"],
+    "region": "Southern",
+    "images": ["/images/hikkaduwa.jpg"]
+  },
+  {
+    "title": "Arugam Bay – The Laid-back Paradise for Surfers",
+    "slug": "arugam-bay",
+    "description": "Sri Lanka’s surf capital and chill spot. Ride waves, explore lagoons, or relax with yoga and sunsets.",
+    "tags": ["surfing", "east coast", "relaxation"],
+    "region": "Eastern",
+    "images": ["/images/arugam-bay.jpg"]
+  },
+  {
+    "title": "Yala – Into the Wild Heart of Sri Lanka",
+    "slug": "yala",
+    "description": "Embark on wildlife safaris, spot leopards and elephants, and explore sacred temples in Yala National Park.",
+    "tags": ["wildlife", "safari", "national park"],
+    "region": "Southeast",
+    "images": ["/images/yala.jpg"]
+  }
+]

@@ -76,7 +76,7 @@ const ServicesSection = () => {
             distance: "35 km",
             duration: "45-60 min",
 
-            vehicle: "Air-conditioned Car/Van",
+            vehicle: "Car/Van",
             features: ["Meet & Greet", "Free Waiting", "24/7 Available"],
             popular: true
         },
@@ -88,7 +88,7 @@ const ServicesSection = () => {
             distance: "12 km",
             duration: "20-25 min",
 
-            vehicle: "Car/Tuk-tuk",
+            vehicle: "Car/Van",
             features: ["Shortest Route", "Beach Access", "Budget Friendly"],
             popular: true
         },
@@ -100,7 +100,7 @@ const ServicesSection = () => {
             distance: "160 km",
             duration: "2.5-3 hours",
 
-            vehicle: "Comfortable Car/Van",
+            vehicle: "Car/Van",
             features: ["Scenic Route", "Rest Stops", "Professional Driver"],
             popular: false
         },
@@ -130,7 +130,7 @@ const ServicesSection = () => {
 
             groupSize: "1-8 people",
             highlights: ["Independence Square", "Gangaramaya Temple", "Pettah Market", "Galle Face Green"],
-            includes: ["Professional Guide", "Air-conditioned Vehicle", "Hotel Pickup"],
+            includes: ["Professional Guide", "Air-conditioned Vehicle", "Transport", "Hotel Pickup"],
             difficulty: "Easy"
         },
         {
@@ -143,22 +143,22 @@ const ServicesSection = () => {
 
             groupSize: "2-12 people",
             highlights: ["200+ Bird Species", "Mangrove Forests", "Traditional Fishing", "Boat Safari"],
-            includes: ["Boat Ride", "Local Guide", "Refreshments"],
+            includes: ["Local Guide", "Transport", "Air-conditioned Vehicle", "Hotel Pickup"],
             difficulty: "Easy"
         },
-        {
-            id: 3,
-            title: "Pinnawala Elephant Orphanage",
-            subtitle: "Wildlife Conservation Experience",
-            description: "Visit the world's largest elephant orphanage and witness feeding, bathing, and care routines.",
-            duration: "8 Hours",
-            timeType: "Full Day",
+        // {
+        //     id: 3,
+        //     title: "Pinnawala Elephant Orphanage",
+        //     subtitle: "Wildlife Conservation Experience",
+        //     description: "Visit the world's largest elephant orphanage and witness feeding, bathing, and care routines.",
+        //     duration: "8 Hours",
+        //     timeType: "Full Day",
 
-            groupSize: "1-15 people",
-            highlights: ["80+ Elephants", "Feeding Time", "River Bathing", "Baby Elephants"],
-            includes: ["Entry Tickets", "Lunch", "Transport", "Guide"],
-            difficulty: "Easy"
-        },
+        //     groupSize: "1-15 people",
+        //     highlights: ["80+ Elephants", "Feeding Time", "River Bathing", "Baby Elephants"],
+        //     includes: ["Entry Tickets", "Lunch", "Transport", "Guide"],
+        //     difficulty: "Easy"
+        // },
         {
             id: 4,
             title: "Sigiriya Rock Fortress",
@@ -169,7 +169,7 @@ const ServicesSection = () => {
 
             groupSize: "1-10 people",
             highlights: ["UNESCO World Heritage", "Ancient Frescoes", "Summit Views", "Royal Gardens"],
-            includes: ["Entry Tickets", "Lunch", "Transport", "Professional Guide"],
+            includes: ["Transport", "Professional Guide", "Air-conditioned Vehicle", "Hotel Pickup"],
             difficulty: "Moderate"
         }
     ];
@@ -212,19 +212,24 @@ const ServicesSection = () => {
                                 <button
                                     key={tab.id}
                                     onClick={() => setActiveTab(tab.id)}
-                                    className={`group p-6 rounded-2xl border-2 transition-all duration-300 text-left ${activeTab === tab.id
-                                        ? 'bg-cyan-600 border-cyan-600 text-white shadow-xl'
-                                        : 'bg-white border-gray-200 hover:border-cyan-300 hover:shadow-lg text-gray-700'
+                                    className={`group flex justify-center items-center flex-col p-4 rounded-2xl border-2 transition-all duration-300 text-left
+                                        ${activeTab === tab.id
+                                            ? 'bg-gradient-to-r from-cyan-500 to-blue-500 border-transparent text-white shadow-gray-400 shadow-md'
+                                            : 'bg-white border-gray-200 hover:border-cyan-600 hover:shadow-md text-gray-700'
                                         }`}
                                 >
-                                    <div className="flex items-center mb-3">
-                                        <IconComponent size={28} className={`mr-3 ${activeTab === tab.id ? 'text-white' : 'text-cyan-600'}`} />
+                                    <div className="flex items-center mb-1">
+                                        <IconComponent
+                                            size={28}
+                                            className={`mr-3 ${activeTab === tab.id ? 'text-white' : 'text-cyan-600'}`}
+                                        />
                                         <h3 className="text-lg font-semibold">{tab.label}</h3>
                                     </div>
-                                    <p className={`text-sm ${activeTab === tab.id ? 'text-cyan-100' : 'text-gray-500'}`}>
+                                    <p className={`text-sm ${activeTab === tab.id ? 'text-blue-100' : 'text-gray-500'}`}>
                                         {tab.description}
                                     </p>
                                 </button>
+
                             );
                         })}
                     </div>
@@ -238,24 +243,7 @@ const ServicesSection = () => {
                             transition={{ duration: 0.5 }}
                         >
                             <div className="max-w-7xl mx-auto">
-                                {/* <div className="text-center mb-12">
-                                    <motion.h2
-                                        initial={{ opacity: 0, y: -20 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ duration: 0.6 }}
-                                        className="text-3xl md:text-4xl font-bold text-cyan-800 mb-4"
-                                    >
-                                        Embark on an Unforgettable Sri Lankan Journey
-                                    </motion.h2>
-                                    <motion.p
-                                        initial={{ opacity: 0 }}
-                                        animate={{ opacity: 1 }}
-                                        transition={{ duration: 0.6, delay: 0.2 }}
-                                        className="text-cyan-600 text-lg max-w-2xl mx-auto"
-                                    >
-                                        From ancient temples to sun-kissed beaches, explore the soul of Sri Lanka with expertly designed tours made for discovery and wonder.
-                                    </motion.p>
-                                </div> */}
+
 
                                 <motion.div
                                     variants={containerVariants}
@@ -324,6 +312,11 @@ const ServicesSection = () => {
                                         <ArrowRight size={18} className="ml-2" />
                                     </button>
                                 </motion.div>
+                                {/* <div className="sm:hidden fixed bottom-4 left-0 right-0 z-50 px-4">
+                                    <button className="w-full bg-cyan-600 hover:bg-cyan-700 text-white text-base font-semibold py-3 rounded-xl shadow-lg transition duration-300">
+                                        Inquire Now
+                                    </button>
+                                </div> */}
                             </div>
                         </motion.div>
                     )}
@@ -335,113 +328,73 @@ const ServicesSection = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
+                            className="relative"
                         >
-                            {/* <div className="text-center mb-12">
-                                <motion.h2
-                                    initial={{ opacity: 0, y: -20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6 }}
-                                    className="text-3xl md:text-4xl font-bold text-cyan-800 mb-4"
-                                >
-                                    Reliable Airport Transfers
-                                </motion.h2>
-                                <motion.p
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ duration: 0.6, delay: 0.2 }}
-                                    className="text-cyan-600 text-lg max-w-2xl mx-auto"
-                                >
-                                    Start your Sri Lankan adventure with comfortable, safe, and punctual transfers from Bandaranaike International Airport to your destination.
-                                </motion.p>
-                            </div> */}
-
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                                 {transfers.map((transfer) => (
                                     <motion.div
                                         key={transfer.id}
                                         variants={itemVariants}
                                         initial="hidden"
                                         animate="visible"
-                                        className={`
-                    bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl 
-                    transition-all duration-300 border-2 
-                    ${transfer.popular
-                                                ? 'border-cyan-200 bg-gradient-to-br from-cyan-50 to-white'
-                                                : 'border-gray-100'
-                                            }
-                `}
+                                        className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-200 flex flex-col"
                                     >
-                                        {/* Header */}
                                         <div className="flex items-start justify-between mb-4">
-                                            <div className="flex-1">
-                                                <div className="flex items-center mb-2">
-                                                    <h4 className="text-xl font-bold text-gray-800">{transfer.title}</h4>
-                                                    {transfer.popular && (
-                                                        <span className="ml-2 bg-cyan-600 text-white text-xs px-2 py-1 rounded-full">
-                                                            Popular
-                                                        </span>
-                                                    )}
-                                                </div>
-                                                <p className="text-cyan-600 font-medium text-sm mb-2">{transfer.subtitle}</p>
-                                                <p className="text-gray-600 text-sm">{transfer.description}</p>
+                                            <div>
+                                                <h4 className="text-xl font-bold text-gray-800">{transfer.title}</h4>
+                                                <p className="text-cyan-600 font-medium text-sm">{transfer.subtitle}</p>
                                             </div>
-
-                                            {/* Info Icons - moved vehicle here and arranged vertically */}
-
+                                            {transfer.popular && (
+                                                <span className="ml-2 bg-cyan-600 text-white text-xs px-2 py-1 rounded-full">
+                                                    Popular
+                                                </span>
+                                            )}
                                         </div>
 
-                                        {/* Features */}
-                                        <div className="mb-6 flex justify-between">
-                                            {/* <div>
-                                                <p className="text-sm font-medium text-gray-700 mb-3">Service Features:</p>
-                                                <div className="grid grid-cols-1 gap-2">
-                                                    {transfer.features.map((feature, index) => (
-                                                        <div key={index} className="flex items-center text-sm text-gray-600">
-                                                            <CheckCircle size={14} className="mr-2 text-green-500 flex-shrink-0" />
-                                                            {feature}
-                                                        </div>
-                                                    ))}
-                                                </div>
-                                            </div> */}
-                                            <div className="flex flex-col gap-2 ">
-                                                <div className="flex items-center text-gray-600 ">
-                                                    <MapPin size={16} className="mr-2 text-cyan-600" />
-                                                    <span className="text-sm font-medium">{transfer.distance}</span>
-                                                </div>
-                                                <div className="flex items-center text-gray-600">
-                                                    <Clock size={16} className="mr-2 text-cyan-600" />
-                                                    <span className="text-sm">{transfer.duration}</span>
-                                                </div>
-                                                <div className="flex items-center text-gray-600">
-                                                    <Car size={16} className="mr-2 text-cyan-600" />
-                                                    <span className="text-sm">{transfer.vehicle}</span>
-                                                </div>
+                                        <p className="text-sm text-gray-600 mb-4 leading-relaxed">{transfer.description}</p>
+
+                                        <div className="space-y-2 text-sm text-gray-600 mb-6">
+                                            <div className="flex items-center">
+                                                <MapPin size={16} className="mr-2 text-green-600" />
+                                                <span>{transfer.distance}</span>
+                                            </div>
+                                            <div className="flex items-center">
+                                                <Clock size={16} className="mr-2 text-orange-600" />
+                                                <span>{transfer.duration}</span>
+                                            </div>
+                                            <div className="flex items-center">
+                                                <Car size={16} className="mr-2 text-blue-600" />
+                                                <span>{transfer.vehicle}</span>
                                             </div>
                                         </div>
 
-                                        <button className="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-medium py-3 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center">
+                                        <motion.button
+                                            whileHover={{ scale: 1.03 }}
+                                            className="mt-auto bg-cyan-600 hover:bg-cyan-700 text-white font-semibold py-2.5 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center"
+                                        >
                                             Request Transfer Quote
                                             <ChevronRight size={16} className="ml-1" />
-                                        </button>
+                                        </motion.button>
                                     </motion.div>
                                 ))}
                             </div>
 
-                            {/* Contact Section */}
                             <div className="mt-12">
-                                <div className="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-2xl p-8 text-center text-white">
-                                    <Phone size={32} className="mx-auto mb-4" />
+                                <div className="bg-gradient-to-r from-cyan-600 to-blue-600 rounded-2xl p-6 text-center text-white">
+                                    <Phone size={32} className="mx-auto mb-3" />
                                     <h4 className="text-2xl font-bold mb-2">Need a Custom Transfer?</h4>
                                     <p className="text-cyan-100 mb-6 max-w-2xl mx-auto">
-                                        We provide transfers to any destination in Sri Lanka. Contact us for personalized quotes and special requirements.
+                                        We're available 24/7 to take you anywhere in Sri Lanka. Let us know your needs and we'll arrange it.
                                     </p>
-                                    <button className="bg-white text-cyan-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors duration-300">
+                                    <button className="bg-white text-cyan-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors duration-300">
                                         Get Custom Quote
                                     </button>
                                 </div>
                             </div>
+
                         </motion.div>
                     )}
+
 
                     {/* Excursions Content */}
                     {activeTab === 'excursions' && (
@@ -451,26 +404,9 @@ const ServicesSection = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
                         >
-                            {/* <div className="text-center mb-12">
-                                <motion.h2
-                                    initial={{ opacity: 0, y: -20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6 }}
-                                    className="text-3xl md:text-4xl font-bold text-cyan-800 mb-4"
-                                >
-                                    Discover Sri Lanka's Wonders
-                                </motion.h2>
-                                <motion.p
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ duration: 0.6, delay: 0.2 }}
-                                    className="text-cyan-600 text-lg max-w-2xl mx-auto"
-                                >
-                                    Experience the best of Sri Lanka with our carefully curated day trips and excursions, perfect for all types of travelers.
-                                </motion.p>
-                            </div> */}
 
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                                 {excursions.map((excursion) => (
                                     <motion.div
                                         key={excursion.id}
@@ -486,30 +422,10 @@ const ServicesSection = () => {
                                                 <p className="text-cyan-600 font-medium text-sm mb-2">{excursion.subtitle}</p>
                                                 <p className="text-gray-600 text-sm leading-relaxed">{excursion.description}</p>
                                             </div>
-                                            <div className="text-right ml-4">
+                                            {/* <div className="text-right ml-4">
                                                 <div className="text-3xl font-bold text-cyan-600">${excursion.price}</div>
                                                 <div className="text-sm text-gray-500">per person</div>
-                                            </div>
-                                        </div>
-
-                                        {/* Quick Info */}
-                                        <div className="grid grid-cols-3 gap-4 mb-6 p-4 bg-gray-50 rounded-lg">
-                                            <div className="text-center">
-                                                <Clock size={20} className="mx-auto text-cyan-600 mb-1" />
-                                                <div className="text-sm font-medium text-gray-700">{excursion.duration}</div>
-                                                <div className="text-xs text-gray-500">{excursion.timeType}</div>
-                                            </div>
-                                            <div className="text-center">
-                                                <Users size={20} className="mx-auto text-cyan-600 mb-1" />
-                                                <div className="text-sm font-medium text-gray-700">{excursion.groupSize}</div>
-                                                <div className="text-xs text-gray-500">Group Size</div>
-                                            </div>
-                                            <div className="text-center">
-                                                <div className={`w-5 h-5 mx-auto mb-1 rounded-full ${excursion.difficulty === 'Easy' ? 'bg-green-500' : 'bg-yellow-500'
-                                                    }`}></div>
-                                                <div className="text-sm font-medium text-gray-700">{excursion.difficulty}</div>
-                                                <div className="text-xs text-gray-500">Difficulty</div>
-                                            </div>
+                                            </div> */}
                                         </div>
 
                                         {/* Highlights */}
@@ -530,7 +446,7 @@ const ServicesSection = () => {
                                             <p className="text-sm font-medium text-gray-700 mb-2">Includes:</p>
                                             <div className="flex flex-wrap gap-2">
                                                 {excursion.includes.map((item, index) => (
-                                                    <span key={index} className="bg-cyan-50 text-cyan-700 text-xs px-2 py-1 rounded-full border border-cyan-200">
+                                                    <span key={index} className="bg-orange-50 text-orange-700 text-xs px-2 py-1 rounded-full border border-orange-400">
                                                         {item}
                                                     </span>
                                                 ))}
@@ -547,7 +463,7 @@ const ServicesSection = () => {
 
                             <div className="mt-12 text-center">
                                 <button className="inline-flex items-center justify-center bg-cyan-800 hover:bg-cyan-900 text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300">
-                                    View All Excursions
+                                    Request an Excursions
                                     <ArrowRight size={18} className="ml-2" />
                                 </button>
                             </div>
