@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Star, MapPin, Calendar, Users, ChevronRight, ArrowRight, Car, Plane, Camera, Clock, Phone, CheckCircle, Compass, Link } from 'lucide-react';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 const ServicesSection = () => {
     const [activeTab, setActiveTab] = useState('roundtrips');
     const [isHovered, setIsHovered] = useState(null);
-
+ const router = useRouter();
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
@@ -370,6 +371,7 @@ const ServicesSection = () => {
 
                                         <motion.button
                                             whileHover={{ scale: 1.03 }}
+                                           onClick={() => { router.push("/home/Transfer-Request") }}
                                             className="mt-auto bg-cyan-600 hover:bg-cyan-700 text-white font-semibold py-2.5 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center"
                                         >
                                             Request Transfer Quote
