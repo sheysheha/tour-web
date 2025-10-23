@@ -88,63 +88,64 @@ export default function Home() {
   };
 
   const carouselItems = [
-    {
-      id: 1,
-      country: 'Lap Lanka Tours',
-      tagline: 'Discover Sri Lanka with Experts',
-      description: 'Welcome to Lap Lanka Tours — your gateway to exploring Sri Lanka’s hidden gems, cultural wonders, and breathtaking landscapes. Let’s create unforgettable memories together!',
-      image: '/ella-train.jpg',
-      color: 'from-green-500 to-emerald-500'
-    },
-    {
-      id: 2,
-      country: 'Sigiriya',
-      tagline: 'Climb the Iconic Lion Rock Fortress',
-      description: 'Discover ancient engineering and breathtaking views atop Sri Lanka’s most legendary monument.',
-      image: '/sigiya-solo-traveler.jpg',
-      color: 'from-orange-500 to-red-500'
-    },
-    {
-      id: 3,
-      country: 'Kandy',
-      tagline: 'Feel the Spiritual Pulse of the Island',
-      description: 'Walk through sacred grounds and witness the cultural heart of Sri Lanka at the Temple of the Tooth.',
-      image: '/temple-of-the-tooth.jpg',
-      color: 'from-purple-600 to-indigo-600'
-    },
-    {
-      id: 4,
-      country: 'Dambulla',
-      tagline: 'Explore the Golden Cave Temples',
-      description: 'Marvel at ancient art and spiritual serenity hidden within rock-carved sanctuaries.',
-      image: '/dambulla.jpg',
-      color: 'from-yellow-500 to-orange-500'
-    },
-    {
-      id: 5,
-      country: 'Colombo',
-      tagline: 'Where Culture Meets the Capital',
-      description: 'Uncover bustling markets, colonial charm, and modern life in Sri Lanka’s vibrant capital.',
-      image: '/colombo-sri-lanka.jpg',
-      color: 'from-pink-500 to-red-500'
-    },
-    {
-      id: 6,
-      country: 'Hatton',
-      tagline: 'Journey Through Misty Tea Country',
-      description: 'Relax on a scenic train ride through lush plantations and serene hills in the central highlands.',
-      image: '/train-journey-hatton-hill-country-sri-lanka.jpg',
-      color: 'from-blue-500 to-cyan-500'
-    },
-    {
-      id: 7,
-      country: 'Mirissa',
-      tagline: 'Tropical Waters & Underwater Wonders',
-      description: 'Snorkel, swim, and discover marine life along the golden shores of southern Sri Lanka.',
-      image: '/Mirissa_Diving_and_Snorkelling.jpg',
-      color: 'from-teal-500 to-blue-600'
-    },
-  ];
+  {
+    id: 1,
+    country: 'Lap Lanka Tours',
+    tagline: 'Discover Sri Lanka with Experts',
+    description: 'Welcome to Lap Lanka Tours — your gateway to exploring Sri Lanka&apos;s hidden gems, cultural wonders, and breathtaking landscapes. Let&apos;s create unforgettable memories together!',
+    image: '/ella-train.jpg',
+    color: 'from-green-500 to-emerald-500'
+  },
+  {
+    id: 2,
+    country: 'Sigiriya',
+    tagline: 'Climb the Iconic Lion Rock Fortress',
+    description: 'Discover ancient engineering and breathtaking views atop Sri Lanka&apos;s most legendary monument.',
+    image: '/sigiya-solo-traveler.jpg',
+    color: 'from-orange-500 to-red-500'
+  },
+  {
+    id: 3,
+    country: 'Kandy',
+    tagline: 'Feel the Spiritual Pulse of the Island',
+    description: 'Walk through sacred grounds and witness the cultural heart of Sri Lanka at the Temple of the Tooth.',
+    image: '/temple-of-the-tooth.jpg',
+    color: 'from-purple-600 to-indigo-600'
+  },
+  {
+    id: 4,
+    country: 'Dambulla',
+    tagline: 'Explore the Golden Cave Temples',
+    description: 'Marvel at ancient art and spiritual serenity hidden within rock-carved sanctuaries.',
+    image: '/dambulla.jpg',
+    color: 'from-yellow-500 to-orange-500'
+  },
+  {
+    id: 5,
+    country: 'Colombo',
+    tagline: 'Where Culture Meets the Capital',
+    description: 'Uncover bustling markets, colonial charm, and modern life in Sri Lanka&apos;s vibrant capital.',
+    image: '/colombo-sri-lanka.jpg',
+    color: 'from-pink-500 to-red-500'
+  },
+  {
+    id: 6,
+    country: 'Hatton',
+    tagline: 'Journey Through Misty Tea Country',
+    description: 'Relax on a scenic train ride through lush plantations and serene hills in the central highlands.',
+    image: '/train-journey-hatton-hill-country-sri-lanka.jpg',
+    color: 'from-blue-500 to-cyan-500'
+  },
+  {
+    id: 7,
+    country: 'Mirissa',
+    tagline: 'Tropical Waters & Underwater Wonders',
+    description: 'Snorkel, swim, and discover marine life along the golden shores of southern Sri Lanka.',
+    image: '/Mirissa_Diving_and_Snorkelling.jpg',
+    color: 'from-teal-500 to-blue-600'
+  },
+];
+
 
 
 
@@ -275,13 +276,13 @@ export default function Home() {
       [id]: !prev[id]
     }));
   };
-  const prevSlide = () => {
-    if (!isAnimating) {
-      setIsAnimating(true);
-      setCurrentSlide((prev) => (prev === 0 ? carouselItems.length - 1 : prev - 1));
-      setTimeout(() => setIsAnimating(false), 700);
-    }
-  };
+  // const prevSlide = () => {
+  //   if (!isAnimating) {
+  //     setIsAnimating(true);
+  //     setCurrentSlide((prev) => (prev === 0 ? carouselItems.length - 1 : prev - 1));
+  //     setTimeout(() => setIsAnimating(false), 700);
+  //   }
+  // };
 
 useEffect(() => {
   const interval = setInterval(() => {
@@ -482,7 +483,7 @@ useEffect(() => {
                     <Image
                       width={320}
                       height={320}
-                      src={dest.image}
+                      src={`/${dest.image}`}
                       alt={dest.name}
                       className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                     />

@@ -50,7 +50,7 @@ export default function TourPage() {
         {
             id: 3,
             title: "Tea Plantations & Highlands",
-            description: "Journey through misty mountains, lush tea plantations and experience the cool climate of Sri Lanka's hill country.",
+            description: "Journey through misty mountains, lush tea plantations and experience the cool climate of Sri Lanka&apos;s hill country.",
             location: "Nuwara Eliya, Ella, Haputale",
             duration: "3 Days",
             price: 399,
@@ -59,7 +59,7 @@ export default function TourPage() {
             image: "/nuwaraeliya.jpg",
             tourType: "nature",
             featured: true,
-            highlights: ["Tea Factory Visit", "Train Ride Through Mountains", "Little Adam's Peak", "Nine Arch Bridge"]
+            highlights: ["Tea Factory Visit", "Train Ride Through Mountains", "Little Adam&apos;s Peak", "Nine Arch Bridge"]
         },
         {
             id: 4,
@@ -101,7 +101,7 @@ export default function TourPage() {
             image: "/camping.jpg",
             tourType: "adventure",
             featured: false,
-            highlights: ["Knuckles Mountain Range", "World's End", "Rainforest Exploration", "Waterfall Hikes"]
+            highlights: ["Knuckles Mountain Range", "World&apos;s End", "Rainforest Exploration", "Waterfall Hikes"]
         },
         {
             id: 7,

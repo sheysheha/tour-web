@@ -1,21 +1,22 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 
 export default function ImageCarousel({ images, title }) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
-  const nextImage = () => {
+  // Use useCallback to avoid useEffect dependency warnings
+  const nextImage = useCallback(() => {
     setCurrentImageIndex((prev) => (prev + 1) % images.length);
     setIsLoading(true);
-  };
+  }, [images.length]);
 
-  const prevImage = () => {
+  const prevImage = useCallback(() => {
     setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
     setIsLoading(true);
-  };
+  }, [images.length]);
 
   // Keyboard arrow navigation
   useEffect(() => {
@@ -26,7 +27,7 @@ export default function ImageCarousel({ images, title }) {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
+  }, [nextImage, prevImage]);
 
   // Auto-slide every 5 seconds
   useEffect(() => {
@@ -35,7 +36,7 @@ export default function ImageCarousel({ images, title }) {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, [currentImageIndex]);
+  }, [nextImage]);
 
   return (
     <div className="relative overflow-hidden rounded-2xl shadow-2xl">
@@ -47,7 +48,10 @@ export default function ImageCarousel({ images, title }) {
 
         {/* Main Image */}
         <Image
-          src={images[currentImageIndex]}
+          src={images[currentImageIndex].startsWith('/')
+            ? images[currentImageIndex]
+            : `/${images[currentImageIndex]}`
+          }
           alt={`${title} image ${currentImageIndex + 1}`}
           width={1200}
           height={700}
@@ -66,11 +70,11 @@ export default function ImageCarousel({ images, title }) {
           <>
             <button
               onClick={prevImage}
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-all duration-200 group/btn z-20"
+              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-all duration-200 z-20"
               aria-label="Previous image"
             >
               <svg
-                className="w-6 h-6 group-hover/btn:-translate-x-1 transition-transform duration-200"
+                className="w-6 h-6 transition-transform duration-200"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -86,11 +90,11 @@ export default function ImageCarousel({ images, title }) {
 
             <button
               onClick={nextImage}
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-all duration-200 group/btn z-20"
+              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 backdrop-blur-sm text-white p-3 rounded-full hover:bg-white/30 transition-all duration-200 z-20"
               aria-label="Next image"
             >
               <svg
-                className="w-6 h-6 group-hover/btn:translate-x-1 transition-transform duration-200"
+                className="w-6 h-6 transition-transform duration-200"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
