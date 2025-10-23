@@ -1,5 +1,5 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Search, Menu, X, ChevronRight, Heart, Clock, ChevronLeft } from 'lucide-react';
 import { MapPin, Globe, Sun, Star, ShieldCheck } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -260,13 +260,15 @@ export default function Home() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const nextSlide = () => {
-    if (!isAnimating) {
-      setIsAnimating(true);
-      setCurrentSlide((prev) => (prev === carouselItems.length - 1 ? 0 : prev + 1));
-      setTimeout(() => setIsAnimating(false), 800);
-    }
-  };
+  const nextSlide = useCallback(() => {
+  if (!isAnimating) {
+    setIsAnimating(true);
+    setCurrentSlide((prev) =>
+      prev === carouselItems.length - 1 ? 0 : prev + 1
+    );
+    setTimeout(() => setIsAnimating(false), 800);
+  }
+}, [isAnimating, carouselItems.length]);
   const toggleFavorite = (id) => {
     setFavorites(prev => ({
       ...prev,
@@ -281,13 +283,13 @@ export default function Home() {
     }
   };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 6000);
+useEffect(() => {
+  const interval = setInterval(() => {
+    nextSlide();
+  }, 5000);
 
-    return () => clearInterval(interval);
-  }, [currentSlide, isAnimating]);
+  return () => clearInterval(interval);
+}, [nextSlide]);
 
   return (
     <div className="min-h-screen bg-gray-50 font-sans">
@@ -308,7 +310,9 @@ export default function Home() {
             >
               <div className={`absolute inset-0 bg-gradient-to-r ${item.color} opacity-70`}></div>
 
-              <img
+              <Image
+              width={1200}
+              height={800}
                 src={item.image}
                 alt={item.country}
                 className="absolute inset-0 w-full h-full object-cover"
@@ -435,7 +439,9 @@ export default function Home() {
       <section className="relative py-20 overflow-hidden px-4 sm:px-8 lg:px-12">
         {/* Full background image with dark overlay */}
         <div className="absolute inset-0 w-full h-full">
-          <img
+          <Image
+            width={1600}
+            height={900}
             src='/ella-train.jpg'
             alt="bg image"
             className="absolute inset-0 w-full h-full object-cover"
@@ -473,7 +479,9 @@ export default function Home() {
               >
                 <Link href={`#${dest.name.toLowerCase()}`} className="block h-full">
                   <div className="relative h-full min-h-48 overflow-hidden">
-                    <img
+                    <Image
+                      width={320}
+                      height={320}
                       src={dest.image}
                       alt={dest.name}
                       className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"

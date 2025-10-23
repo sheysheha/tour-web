@@ -1,5 +1,6 @@
 import React from "react";
 import { Compass, Users, Award, MapPin, Calendar, Smile, Mail, Phone, Clock, CheckCircle, Linkedin } from "lucide-react";
+import Image from "next/image";
 
 // Importing the ModernNavbar component (assume it's in a separate file)
 // import ModernNavbar from "./ModernNavbar";
@@ -31,9 +32,18 @@ const AboutPage = () => {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/2">
               <div className="relative">
+                
+
                 <div className="rounded-lg overflow-hidden shadow-xl">
-                  <img src="/sigiriya-group.jpg" alt="Sri Lankan landscape" className="w-full h-auto" />
+                  <Image
+                    src="/sigiriya-group.jpg"
+                    alt="Sri Lankan landscape"
+                    width={1200}        // set a numeric width
+                    height={800}        // set a numeric height
+                    className="w-full h-auto" // keeps responsive sizing
+                  />
                 </div>
+
                 <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg">
                   <div className="text-cyan-600 font-bold text-4xl">30+</div>
                   <div className="text-gray-600">Years of Excellence</div>
@@ -134,114 +144,118 @@ const AboutPage = () => {
       </section>
 
       {/* Team Section */}
-     <section className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="mb-4 flex items-center justify-center">
-            <div className="w-12 h-1 bg-cyan-500 rounded-full mr-4"></div>
-            <h2 className="text-lg font-medium text-cyan-600">Our Team</h2>
-            <div className="w-12 h-1 bg-cyan-500 rounded-full ml-4"></div>
+      <section className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="mb-4 flex items-center justify-center">
+              <div className="w-12 h-1 bg-cyan-500 rounded-full mr-4"></div>
+              <h2 className="text-lg font-medium text-cyan-600">Our Team</h2>
+              <div className="w-12 h-1 bg-cyan-500 rounded-full ml-4"></div>
+            </div>
+            <h3 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6">
+              Meet The Experts
+            </h3>
+            <p className="text-gray-600 text-lg">
+              Our passionate team of travel specialists is the heart of LAP Lanka Tours.
+              Each member brings unique expertise and a deep love for Sri Lanka.
+            </p>
           </div>
-          <h3 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6">
-            Meet The Experts
-          </h3>
-          <p className="text-gray-600 text-lg">
-            Our passionate team of travel specialists is the heart of LAP Lanka Tours.
-            Each member brings unique expertise and a deep love for Sri Lanka.
-          </p>
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-4xl mx-auto">
-          {/* Team Member 1 */}
-          <div className="group">
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-              <div className="relative overflow-hidden">
-                <img 
-                  src="/charm.jpg" 
-                  alt="Samantha Perera - Founder & CEO" 
-                  className="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-700" 
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-cyan-900/90 via-cyan-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
-                  <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                    <div className="flex space-x-3 justify-center">
-                      <a 
-                        href="mailto:sam@laplanka.com" 
-                        className="bg-white p-3 rounded-full hover:bg-cyan-500 hover:scale-110 transition-all duration-300 group/icon"
-                      >
-                        <Mail size={20} className="text-cyan-600 group-hover/icon:text-white transition-colors" />
-                      </a>
-                      <a 
-                        href="tel:+94123456789" 
-                        className="bg-white p-3 rounded-full hover:bg-cyan-500 hover:scale-110 transition-all duration-300 group/icon"
-                      >
-                        <Phone size={20} className="text-cyan-600 group-hover/icon:text-white transition-colors" />
-                      </a>
-                      <a 
-                        href="#" 
-                        className="bg-white p-3 rounded-full hover:bg-cyan-500 hover:scale-110 transition-all duration-300 group/icon"
-                      >
-                        <Linkedin size={20} className="text-cyan-600 group-hover/icon:text-white transition-colors" />
-                      </a>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-4xl mx-auto">
+            {/* Team Member 1 */}
+            <div className="group">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                <div className="relative overflow-hidden">
+                  <Image
+                    src="/samanthaperera.png"
+                    alt="Samantha Perera - Founder & CEO"
+                    width={480}
+                    height={320}
+                    className="w-full h-100 object-cover transform group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-cyan-900/90 via-cyan-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                    <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                      <div className="flex space-x-3 justify-center">
+                        <a
+                          href="mailto:sam@laplanka.com"
+                          className="bg-white p-3 rounded-full hover:bg-cyan-500 hover:scale-110 transition-all duration-300 group/icon"
+                        >
+                          <Mail size={20} className="text-cyan-600 group-hover/icon:text-white transition-colors" />
+                        </a>
+                        <a
+                          href="tel:+94123456789"
+                          className="bg-white p-3 rounded-full hover:bg-cyan-500 hover:scale-110 transition-all duration-300 group/icon"
+                        >
+                          <Phone size={20} className="text-cyan-600 group-hover/icon:text-white transition-colors" />
+                        </a>
+                        <a
+                          href="#"
+                          className="bg-white p-3 rounded-full hover:bg-cyan-500 hover:scale-110 transition-all duration-300 group/icon"
+                        >
+                          <Linkedin size={20} className="text-cyan-600 group-hover/icon:text-white transition-colors" />
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="p-8">
-                <h4 className="font-bold text-gray-800 text-2xl mb-2">Samantha Perera</h4>
-                <p className="text-cyan-600 font-semibold mb-4 text-lg">Founder & CEO</p>
-                <p className="text-gray-600 leading-relaxed">
-                  With over 30 years in tourism, Sam brings unparalleled knowledge and passion to every tour, ensuring unforgettable experiences across Sri Lanka.
-                </p>
+                <div className="p-8">
+                  <h4 className="font-bold text-gray-800 text-2xl mb-2">Samantha Perera</h4>
+                  <p className="text-cyan-600 font-semibold mb-4 text-lg">Founder & CEO</p>
+                  <p className="text-gray-600 leading-relaxed">
+                    With over 30 years in tourism, Sam brings unparalleled knowledge and passion to every tour, ensuring unforgettable experiences across Sri Lanka.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Team Member 2 */}
-          <div className="group">
-            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
-              <div className="relative overflow-hidden">
-                <img 
-                  src="/charm.jpg" 
-                  alt="Chamod Perera - Director" 
-                  className="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-700" 
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-cyan-900/90 via-cyan-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
-                  <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
-                    <div className="flex space-x-3 justify-center">
-                      <a 
-                        href="mailto:chamod@lapanka.com" 
-                        className="bg-white p-3 rounded-full hover:bg-cyan-500 hover:scale-110 transition-all duration-300 group/icon"
-                      >
-                        <Mail size={20} className="text-cyan-600 group-hover/icon:text-white transition-colors" />
-                      </a>
-                      <a 
-                        href="tel:+94123456789" 
-                        className="bg-white p-3 rounded-full hover:bg-cyan-500 hover:scale-110 transition-all duration-300 group/icon"
-                      >
-                        <Phone size={20} className="text-cyan-600 group-hover/icon:text-white transition-colors" />
-                      </a>
-                      <a 
-                        href="#" 
-                        className="bg-white p-3 rounded-full hover:bg-cyan-500 hover:scale-110 transition-all duration-300 group/icon"
-                      >
-                        <Linkedin size={20} className="text-cyan-600 group-hover/icon:text-white transition-colors" />
-                      </a>
+            {/* Team Member 2 */}
+            <div className="group">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+                <div className="relative overflow-hidden">
+                  <Image
+                    src="/charm.png"
+                    width={480}
+                    height={320}
+                    alt="Chamod Perera - Director"
+                    className="w-full h-100 object-cover transform group-hover:scale-110 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-cyan-900/90 via-cyan-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                    <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                      <div className="flex space-x-3 justify-center">
+                        <a
+                          href="mailto:chamod@lapanka.com"
+                          className="bg-white p-3 rounded-full hover:bg-cyan-500 hover:scale-110 transition-all duration-300 group/icon"
+                        >
+                          <Mail size={20} className="text-cyan-600 group-hover/icon:text-white transition-colors" />
+                        </a>
+                        <a
+                          href="tel:+94123456789"
+                          className="bg-white p-3 rounded-full hover:bg-cyan-500 hover:scale-110 transition-all duration-300 group/icon"
+                        >
+                          <Phone size={20} className="text-cyan-600 group-hover/icon:text-white transition-colors" />
+                        </a>
+                        <a
+                          href="#"
+                          className="bg-white p-3 rounded-full hover:bg-cyan-500 hover:scale-110 transition-all duration-300 group/icon"
+                        >
+                          <Linkedin size={20} className="text-cyan-600 group-hover/icon:text-white transition-colors" />
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="p-8">
-                <h4 className="font-bold text-gray-800 text-2xl mb-2">Chamod Perera</h4>
-                <p className="text-cyan-600 font-semibold mb-4 text-lg">Director</p>
-                <p className="text-gray-600 leading-relaxed">
-                  An expert in Sri Lankan history and wildlife with 5 years of guiding experience, bringing stories and nature to life on every adventure.
-                </p>
+                <div className="p-8">
+                  <h4 className="font-bold text-gray-800 text-2xl mb-2">Chamod Perera</h4>
+                  <p className="text-cyan-600 font-semibold mb-4 text-lg">Director</p>
+                  <p className="text-gray-600 leading-relaxed">
+                    An expert in Sri Lankan history and wildlife with 5 years of guiding experience, bringing stories and nature to life on every adventure.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       {/* Stats Section */}
       <section className="py-16 bg-cyan-600 text-white relative overflow-hidden">
@@ -301,7 +315,7 @@ const AboutPage = () => {
               </p>
               <div className=" flex items-center">
                 <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                  <img src="sam.jpg" alt="Customer" className="w-full h-full object-cover" />
+                  <Image src="/sam.jpg" alt="Customer" width={48} height={48} className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-800">Sarah & James</h4>
@@ -324,7 +338,7 @@ const AboutPage = () => {
               </p>
               <div className=" flex items-center">
                 <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                  <img src="/micheal.jpg" alt="Customer" className="w-full h-full object-cover" />
+                  <Image width={48} height={48} src="/micheal.jpg" alt="Customer" className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-800">Michael Johnson</h4>
@@ -347,7 +361,7 @@ const AboutPage = () => {
               </p>
               <div className=" flex items-center">
                 <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                  <img src="/solo-traveller.jpg" alt="Customer" className="w-full h-full object-cover" />
+                  <Image width={48} height={48} src="/solo-traveller.jpg" alt="Customer" className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-800">Elena Rodriguez</h4>
@@ -394,7 +408,7 @@ const AboutPage = () => {
               <div>
                 <h4 className="font-bold text-gray-800 mb-2">Our Location</h4>
                 <p className="text-gray-600">
-                  <br />
+                  Colombo<br />
                   Sri Lanka
                 </p>
               </div>
@@ -407,8 +421,8 @@ const AboutPage = () => {
               <div>
                 <h4 className="font-bold text-gray-800 mb-2">Contact Us</h4>
                 <p className="text-gray-600">
-                  Phone: +94 76 494 4775<br />
-                  Email: laplankatours@gmail.com.com
+                  Phone: +94 76 494 4775 | +94 77 731 4775 <br />
+                  Email: laplankatours@gmail.com
                 </p>
               </div>
             </div>

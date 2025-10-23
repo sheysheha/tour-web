@@ -7,6 +7,7 @@ import {
     Coffee, Utensils, Hotel, Shield, Phone, MessageCircle,
     ChevronRight, ChevronLeft, Heart, Share2, Info
 } from 'lucide-react';
+import Image from 'next/image';
 
 const LocationDetailsPage = () => {
     // This would normally come from URL params or query
@@ -212,9 +213,11 @@ const LocationDetailsPage = () => {
             {/* Hero Section with Image Carousel */}
             <section className="relative h-[70vh] overflow-hidden">
                 <div className="absolute inset-0">
-                    <img
+                    <Image
                         src={currentLocation.images[activeImageIndex]}
                         alt={currentLocation.name}
+                        width={320}
+                        height={320}
                         className="w-full h-full object-cover transition-all duration-1000"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
