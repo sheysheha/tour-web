@@ -35,7 +35,7 @@ const AboutPage = () => {
                   <img src="/sigiriya-group.jpg" alt="Sri Lankan landscape" className="w-full h-auto" />
                 </div>
                 <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg">
-                  <div className="text-cyan-600 font-bold text-4xl">15+</div>
+                  <div className="text-cyan-600 font-bold text-4xl">30+</div>
                   <div className="text-gray-600">Years of Excellence</div>
                 </div>
               </div>

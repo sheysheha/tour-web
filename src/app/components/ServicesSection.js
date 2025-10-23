@@ -371,7 +371,7 @@ const ServicesSection = () => {
 
                                         <motion.button
                                             whileHover={{ scale: 1.03 }}
-                                           onClick={() => { router.push("/home/Transfer-Request") }}
+                                           onClick={() => { router.push("Transfer-Request") }}
                                             className="mt-auto bg-cyan-600 hover:bg-cyan-700 text-white font-semibold py-2.5 px-4 rounded-lg transition-colors duration-300 flex items-center justify-center"
                                         >
                                             Request Transfer Quote

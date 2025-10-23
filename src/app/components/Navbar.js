@@ -1,10 +1,12 @@
 'use client'
 import React from 'react'
+import { usePathname } from 'next/navigation';
 import Link from 'next/link'
 import { Phone, Mail, Facebook, Instagram, Twitter, Compass, ChevronDown, Menu, X } from 'lucide-react'
 import { useState } from 'react'
 import { useEffect } from 'react'
 export default function Navbar() {
+  const pathname = usePathname();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -61,61 +63,135 @@ export default function Navbar() {
             </div>
 
             {/* Desktop Navigation */}
+            {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-1">
-              <Link href="/home" className="px-3 py-2 rounded-md text-cyan-600 font-medium hover:bg-cyan-50 transition-colors">Home</Link>
-               <div className="relative group">
-                <button
-                  className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50 transition-colors flex items-center"
-                  onClick={() => toggleDropdown('destinations')}
-                >
-                  Services <ChevronDown size={16} className="ml-1" />
-                </button>
+              {/* Home */}
+              <Link
+                href="/home"
+                className={`px-3 py-2 rounded-md font-medium transition-colors transition-all duration-300 hover:scale-110 ${pathname === "/home"
+                  ? "text-cyan-600 "
+                  : "text-gray-700 hover:text-cyan-600"
+                  }`}
+              >
+                Home
+              </Link>
+
+              {/* Services Dropdown */}
+              <div className="relative group">
+                <div className="relative group">
+                  <button
+                    className={`px-3 py-2 rounded-md font-medium flex items-center transition-all duration-300 hover:scale-110 ${pathname.startsWith("/tour-packages") ||
+                        pathname.startsWith("/Transfer-Request") ||
+                        pathname.startsWith("/excursions")
+                        ? "text-cyan-600"
+                        : "text-gray-700 hover:text-cyan-600"
+                      }`}
+                    onClick={() => toggleDropdown("services")}
+                  >
+                    Services <ChevronDown size={16} className="ml-1" />
+                  </button>
+                </div>
+
                 <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out">
                   <div className="py-1">
-                    <Link href="/tour-packages" className="block px-4 py-2 text-sm text-gray-700 hover:bg-cyan-50">Round Trips</Link>
-                    <Link href="/destinations/mountains" className="block px-4 py-2 text-sm text-gray-700 hover:bg-cyan-50">Transfers</Link>
-                    <Link href="/destinations/cultural-sites" className="block px-4 py-2 text-sm text-gray-700 hover:bg-cyan-50">Day Excursions</Link>
+                    <Link
+                      href="/tour-packages"
+                      className={`block px-4 py-2 text-sm rounded-md ${pathname === "/tour-packages"
+                        ? "text-cyan-600 bg-cyan-50"
+                        : "text-gray-700 hover:bg-cyan-50"
+                        }`}
+                    >
+                      Round Trips
+                    </Link>
+                    <Link
+                      href="/Transfer-Request"
+                      className={`block px-4 py-2 text-sm rounded-md ${pathname === "/Transfer-Request"
+                        ? "text-cyan-600 bg-cyan-50"
+                        : "text-gray-700 hover:bg-cyan-50"
+                        }`}
+                    >
+                      Transfers
+                    </Link>
+                    <Link
+                      href="/destinations/cultural-sites"
+                      className={`block px-4 py-2 text-sm rounded-md ${pathname === "/destinations/cultural-sites"
+                        ? "text-cyan-600 bg-cyan-50"
+                        : "text-gray-700 hover:bg-cyan-50"
+                        }`}
+                    >
+                      Day Excursions
+                    </Link>
                   </div>
                 </div>
               </div>
+
+              {/* Destinations Dropdown */}
               <div className="relative group">
                 <button
-                  className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50 transition-colors flex items-center"
-                  onClick={() => toggleDropdown('destinations')}
+                  className={`px-3 py-2 rounded-md font-medium transition-colors flex items-center transition-all duration-300 hover:scale-110 ${pathname.startsWith("/destinations")
+                    ? "text-cyan-600 "
+                    : "text-gray-700 hover:text-cyan-600"
+                    }`}
+                  onClick={() => toggleDropdown("destinations")}
                 >
                   Destinations <ChevronDown size={16} className="ml-1" />
                 </button>
                 <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out">
                   <div className="py-1">
-                    <Link href="/destinations/beaches" className="block px-4 py-2 text-sm text-gray-700 hover:bg-cyan-50">Beaches</Link>
-                    <Link href="/destinations/mountains" className="block px-4 py-2 text-sm text-gray-700 hover:bg-cyan-50">Mountains</Link>
-                    <Link href="/destinations/cultural-sites" className="block px-4 py-2 text-sm text-gray-700 hover:bg-cyan-50">Cultural Sites</Link>
+                    <Link
+                      href="/destinations/beaches"
+                      className={`block px-4 py-2 text-sm rounded-md ${pathname === "/destinations/beaches"
+                        ? "text-cyan-600 bg-cyan-50"
+                        : "text-gray-700 hover:bg-cyan-50"
+                        }`}
+                    >
+                      Beaches
+                    </Link>
+                    <Link
+                      href="/destinations/mountains"
+                      className={`block px-4 py-2 text-sm rounded-md ${pathname === "/destinations/mountains"
+                        ? "text-cyan-600 bg-cyan-50"
+                        : "text-gray-700 hover:bg-cyan-50"
+                        }`}
+                    >
+                      Mountains
+                    </Link>
+                    <Link
+                      href="/destinations/cultural-sites"
+                      className={`block px-4 py-2 text-sm rounded-md ${pathname === "/destinations/cultural-sites"
+                        ? "text-cyan-600 bg-cyan-50"
+                        : "text-gray-700 hover:bg-cyan-50"
+                        }`}
+                    >
+                      Cultural Sites
+                    </Link>
                   </div>
                 </div>
               </div>
 
-              {/* <div className="relative group">
-                <button 
-                  className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50 transition-colors flex items-center"
-                  onClick={() => toggleDropdown('packages')}
-                >
-                  Tour Packages <ChevronDown size={16} className="ml-1" />
-                </button>
-                <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 ease-in-out">
-                  <div className="py-1">
-                    <Link href="/home" className="block px-4 py-2 text-sm text-gray-700 hover:bg-cyan-50">Adventure Tours</Link> 
-                    <Link href="/home" className="block px-4 py-2 text-sm text-gray-700 hover:bg-cyan-50">Cultural Tours</Link> 
-                    <Link href="/home" className="block px-4 py-2 text-sm text-gray-700 hover:bg-cyan-50">Beach Getaways</Link> 
-                    <Link href="/home" className="block px-4 py-2 text-sm text-gray-700 hover:bg-cyan-50">Family Packages</Link> 
-                    <Link href="/home" className="block px-4 py-2 text-sm text-gray-700 hover:bg-cyan-50">Honeymoon Specials</Link> 
-                  </div>
-                </div>
-              </div> */}
-              <Link href="/tour-packages" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50 transition-colors">Travel Diaries</Link>
-              {/* <Link href="/wish" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50 transition-colors">Bookings</Link>  */}
-              <Link href="/about" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50 transition-colors">About Us</Link>
-              {/* <Link href="/wish" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50 transition-colors">Contact</Link> */}
+              {/* Travel Diaries */}
+              {/* <Link
+                href="/tour-packages"
+                className={`px-3 py-2 rounded-md font-medium transition-colors ${pathname === "/tour-packages"
+                    ? "text-cyan-600 bg-cyan-50"
+                    : "text-gray-700 hover:bg-cyan-50"
+                  }`}
+              >
+                Travel Diaries
+              </Link> */}
+
+              {/* About Us */}
+              <Link
+                href="/about"
+                className={`px-3 py-2 rounded-md font-medium transition-colors transition-all duration-300 hover:scale-110 ${pathname === "/about"
+                  ? "text-cyan-600"
+                  : "text-gray-700 hover:text-cyan-600"
+                  }`}
+              >
+                About Us
+              </Link>
             </div>
+
 
             {/* CTA Button */}
             <div className="hidden md:block">
