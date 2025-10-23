@@ -114,7 +114,7 @@ export default function Navbar() {
               <Link href="/tour-packages" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50 transition-colors">Travel Diaries</Link>
               {/* <Link href="/wish" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50 transition-colors">Bookings</Link>  */}
               <Link href="/about" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50 transition-colors">About Us</Link>
-              <Link href="/wish" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50 transition-colors">Contact</Link>
+              {/* <Link href="/wish" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50 transition-colors">Contact</Link> */}
             </div>
 
             {/* CTA Button */}
@@ -182,7 +182,7 @@ export default function Navbar() {
 
                 {/* <Link href="/wish" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50">Bookings</Link>  */}
                 <Link href="/about" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50">About Us</Link>
-                <Link href="/wish" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50">Contact</Link>
+                {/* <Link href="/wish" className="px-3 py-2 rounded-md text-gray-700 font-medium hover:bg-cyan-50">Contact</Link> */}
 
                 <div className="pt-2">
                   <Link href="/about" className="block w-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-3 py-2 rounded-full font-medium text-center">

@@ -1,5 +1,5 @@
 import React from "react";
-import { Compass, Users, Award, MapPin, Calendar, Smile, Mail, Phone, Clock, CheckCircle } from "lucide-react";
+import { Compass, Users, Award, MapPin, Calendar, Smile, Mail, Phone, Clock, CheckCircle, Linkedin } from "lucide-react";
 
 // Importing the ModernNavbar component (assume it's in a separate file)
 // import ModernNavbar from "./ModernNavbar";
@@ -134,120 +134,114 @@ const AboutPage = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-16 md:py-24">
-        <div className=" mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <div className="mb-4 flex items-center justify-center">
-              <div className="w-12 h-1 bg-cyan-500 rounded-full mr-4"></div>
-              <h2 className="text-lg font-medium text-cyan-600">Our Team</h2>
-              <div className="w-12 h-1 bg-cyan-500 rounded-full ml-4"></div>
+     <section className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white">
+      <div className="max-w-6xl mx-auto px-4">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="mb-4 flex items-center justify-center">
+            <div className="w-12 h-1 bg-cyan-500 rounded-full mr-4"></div>
+            <h2 className="text-lg font-medium text-cyan-600">Our Team</h2>
+            <div className="w-12 h-1 bg-cyan-500 rounded-full ml-4"></div>
+          </div>
+          <h3 className="text-3xl md:text-5xl font-bold text-gray-800 mb-6">
+            Meet The Experts
+          </h3>
+          <p className="text-gray-600 text-lg">
+            Our passionate team of travel specialists is the heart of LAP Lanka Tours.
+            Each member brings unique expertise and a deep love for Sri Lanka.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-4xl mx-auto">
+          {/* Team Member 1 */}
+          <div className="group">
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="/charm.jpg" 
+                  alt="Samantha Perera - Founder & CEO" 
+                  className="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-700" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-cyan-900/90 via-cyan-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                  <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <div className="flex space-x-3 justify-center">
+                      <a 
+                        href="mailto:sam@laplanka.com" 
+                        className="bg-white p-3 rounded-full hover:bg-cyan-500 hover:scale-110 transition-all duration-300 group/icon"
+                      >
+                        <Mail size={20} className="text-cyan-600 group-hover/icon:text-white transition-colors" />
+                      </a>
+                      <a 
+                        href="tel:+94123456789" 
+                        className="bg-white p-3 rounded-full hover:bg-cyan-500 hover:scale-110 transition-all duration-300 group/icon"
+                      >
+                        <Phone size={20} className="text-cyan-600 group-hover/icon:text-white transition-colors" />
+                      </a>
+                      <a 
+                        href="#" 
+                        className="bg-white p-3 rounded-full hover:bg-cyan-500 hover:scale-110 transition-all duration-300 group/icon"
+                      >
+                        <Linkedin size={20} className="text-cyan-600 group-hover/icon:text-white transition-colors" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="p-8">
+                <h4 className="font-bold text-gray-800 text-2xl mb-2">Samantha Perera</h4>
+                <p className="text-cyan-600 font-semibold mb-4 text-lg">Founder & CEO</p>
+                <p className="text-gray-600 leading-relaxed">
+                  With over 30 years in tourism, Sam brings unparalleled knowledge and passion to every tour, ensuring unforgettable experiences across Sri Lanka.
+                </p>
+              </div>
             </div>
-            <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Meet The Experts</h3>
-            <p className="text-gray-600">
-              Our passionate team of travel specialists is the heart of LAP Lanka Tours.
-              Each member brings unique expertise and a deep love for Sri Lanka.
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Team Member 1 */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md group">
-              <div className="relative">
-                <img src="/charm.jpg" alt="Team member" className="w-full h-auto" />
-                <div className="absolute inset-0 bg-gradient-to-t from-cyan-600 to-transparent opacity-0 group-hover:opacity-70 transition-opacity flex items-end justify-center pb-4">
-                  <div className="flex space-x-3">
-                    <a href="#" className="bg-white p-2 rounded-full hover:bg-cyan-100 transition-colors">
-                      <Mail size={16} className="text-cyan-600" />
-                    </a>
-                    <a href="#" className="bg-white p-2 rounded-full hover:bg-cyan-100 transition-colors">
-                      <Phone size={16} className="text-cyan-600" />
-                    </a>
+          {/* Team Member 2 */}
+          <div className="group">
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
+              <div className="relative overflow-hidden">
+                <img 
+                  src="/charm.jpg" 
+                  alt="Chamod Perera - Director" 
+                  className="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-700" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-cyan-900/90 via-cyan-900/40 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500">
+                  <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                    <div className="flex space-x-3 justify-center">
+                      <a 
+                        href="mailto:chamod@lapanka.com" 
+                        className="bg-white p-3 rounded-full hover:bg-cyan-500 hover:scale-110 transition-all duration-300 group/icon"
+                      >
+                        <Mail size={20} className="text-cyan-600 group-hover/icon:text-white transition-colors" />
+                      </a>
+                      <a 
+                        href="tel:+94123456789" 
+                        className="bg-white p-3 rounded-full hover:bg-cyan-500 hover:scale-110 transition-all duration-300 group/icon"
+                      >
+                        <Phone size={20} className="text-cyan-600 group-hover/icon:text-white transition-colors" />
+                      </a>
+                      <a 
+                        href="#" 
+                        className="bg-white p-3 rounded-full hover:bg-cyan-500 hover:scale-110 transition-all duration-300 group/icon"
+                      >
+                        <Linkedin size={20} className="text-cyan-600 group-hover/icon:text-white transition-colors" />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="p-6">
-                <h4 className="font-bold text-gray-800 text-lg mb-1">Chamod Perera</h4>
-                <p className="text-cyan-600 mb-3">Founder & CEO</p>
-                <p className="text-gray-600 text-sm">
-                  With over 20 years in tourism, Priya brings unparalleled knowledge and passion to every tour.
-                </p>
-              </div>
-            </div>
-
-            {/* Team Member 2 */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md group">
-              <div className="relative">
-                <img src="/charm.jpg" alt="Team member" className="w-full h-auto" />
-                <div className="absolute inset-0 bg-gradient-to-t  opacity-0 group-hover:opacity-70 transition-opacity flex items-end justify-center pb-4">
-                  <div className="flex space-x-3">
-                    <a href="#" className="bg-white p-2 rounded-full hover:bg-cyan-100 transition-colors">
-                      <Mail size={16} className="text-cyan-600" />
-                    </a>
-                    <a href="#" className="bg-white p-2 rounded-full hover:bg-cyan-100 transition-colors">
-                      <Phone size={16} className="text-cyan-600" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="p-6">
-                <h4 className="font-bold text-gray-800 text-lg mb-1">Chamod Perera</h4>
-                <p className="text-cyan-600 mb-3">Head Tour Guide</p>
-                <p className="text-gray-600 text-sm">
-                  An expert in Sri Lankan history and wildlife with 15 years of guiding experience.
-                </p>
-              </div>
-            </div>
-
-            {/* Team Member 3 */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md group">
-              <div className="relative">
-                <img src="/charm.jpg" alt="Team member" className="w-full h-auto" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-70 transition-opacity flex items-end justify-center pb-4">
-                  <div className="flex space-x-3">
-                    <a href="#" className="bg-white p-2 rounded-full hover:bg-cyan-100 transition-colors">
-                      <Mail size={16} className="text-cyan-600" />
-                    </a>
-                    <a href="#" className="bg-white p-2 rounded-full hover:bg-cyan-100 transition-colors">
-                      <Phone size={16} className="text-cyan-600" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="p-6">
-                <h4 className="font-bold text-gray-800 text-lg mb-1">Chamod Perera</h4>
-                <p className="text-cyan-600 mb-3">Travel Consultant</p>
-                <p className="text-gray-600 text-sm">
-                  Specializes in crafting custom itineraries that perfectly match our clients' desires.
-                </p>
-              </div>
-            </div>
-
-            {/* Team Member 4 */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-md group">
-              <div className="relative">
-                <img src="/charm.jpg" alt="Team member" className="w-full h-auto" />
-                <div className="absolute inset-0 bg-gradient-to-t from-cyan-600 to-transparent opacity-0 group-hover:opacity-70 transition-opacity flex items-end justify-center pb-4">
-                  <div className="flex space-x-3">
-                    <a href="#" className="bg-white p-2 rounded-full hover:bg-cyan-100 transition-colors">
-                      <Mail size={16} className="text-cyan-600" />
-                    </a>
-                    <a href="#" className="bg-white p-2 rounded-full hover:bg-cyan-100 transition-colors">
-                      <Phone size={16} className="text-cyan-600" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="p-6">
-                <h4 className="font-bold text-gray-800 text-lg mb-1">Raj Mendis</h4>
-                <p className="text-cyan-600 mb-3">Customer Relations</p>
-                <p className="text-gray-600 text-sm">
-                  Dedicated to ensuring every guest receives personalized attention and care.
+              <div className="p-8">
+                <h4 className="font-bold text-gray-800 text-2xl mb-2">Chamod Perera</h4>
+                <p className="text-cyan-600 font-semibold mb-4 text-lg">Director</p>
+                <p className="text-gray-600 leading-relaxed">
+                  An expert in Sri Lankan history and wildlife with 5 years of guiding experience, bringing stories and nature to life on every adventure.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Stats Section */}
       <section className="py-16 bg-cyan-600 text-white relative overflow-hidden">
@@ -400,7 +394,7 @@ const AboutPage = () => {
               <div>
                 <h4 className="font-bold text-gray-800 mb-2">Our Location</h4>
                 <p className="text-gray-600">
-                  123 Galle Road, Colombo 03<br />
+                  <br />
                   Sri Lanka
                 </p>
               </div>
@@ -413,8 +407,8 @@ const AboutPage = () => {
               <div>
                 <h4 className="font-bold text-gray-800 mb-2">Contact Us</h4>
                 <p className="text-gray-600">
-                  Phone: +94 123 456 789<br />
-                  Email: info@laplankatours.com
+                  Phone: +94 76 494 4775<br />
+                  Email: laplankatours@gmail.com.com
                 </p>
               </div>
             </div>
