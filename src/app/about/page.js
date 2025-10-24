@@ -18,7 +18,7 @@ const AboutPage = () => {
         <div className=" mx-auto px-4 py-24 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">About LAP Lanka Tours</h1>
-            <p className="text-xl text-cyan-100 mb-8">Discover the heart and soul behind Sri Lanka's premier tour experience</p>
+            <p className="text-xl text-cyan-100 mb-8">Discover the heart and soul behind Sri Lanka&apos;s premier tour experience</p>
             <div className="flex justify-center">
               <div className="w-16 h-1 bg-white rounded-full"></div>
             </div>
@@ -59,8 +59,8 @@ const AboutPage = () => {
               <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Crafting Memorable Journeys Since 2010</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 LAP Lanka Tours began with a passion for sharing the authentic beauty of Sri Lanka with the world.
-                What started as a small family business has grown into one of the island's most trusted tour operators,
-                yet we've never lost our commitment to personalized service and sustainable tourism.
+                What started as a small family business has grown into one of the island&apos;s most trusted tour operators,
+                yet we&apos;ve never lost our commitment to personalized service and sustainable tourism.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
                 Our team consists of local experts who know every hidden gem and cultural nuance of this
@@ -136,7 +136,7 @@ const AboutPage = () => {
               </div>
               <h4 className="text-xl font-bold text-gray-800 mb-4">Responsible Tourism</h4>
               <p className="text-gray-600">
-                We're committed to sustainable practices that respect local communities and preserve Sri Lanka's natural beauty.
+                We&apos;re committed to sustainable practices that respect local communities and preserve Sri Lanka&apos;s natural beauty.
               </p>
             </div>
           </div>
@@ -296,7 +296,7 @@ const AboutPage = () => {
             </div>
             <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">What Our Clients Say</h3>
             <p className="text-gray-600">
-              Don't just take our word for it. Here's what travelers have to say about their experience with LAP Lanka Tours.
+              Don&apos;t just take our word for it. Here&apos;s what travelers have to say about their experience with LAP Lanka Tours.
             </p>
           </div>
 
@@ -378,7 +378,7 @@ const AboutPage = () => {
         <div className=" mx-auto px-4 text-center">
           <h3 className="text-3xl md:text-4xl font-bold mb-6">Ready to Experience Sri Lanka with Us?</h3>
           <p className="text-xl text-cyan-100 mb-8 max-w-2xl mx-auto">
-            Let's start planning your perfect Sri Lankan adventure today. Our team is ready to craft a journey that's uniquely yours.
+            Let&apos;s start planning your perfect Sri Lankan adventure today. Our team is ready to craft a journey that&apos;s uniquely yours.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a

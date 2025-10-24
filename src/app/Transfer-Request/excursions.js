@@ -126,7 +126,7 @@ const ExcursionPage = () => {
       itinerary: [
         "6:00 AM - Depart to Ella",
         "9:00 AM - Nine Arch Bridge visit",
-        "11:00 AM - Little Adam's Peak hike",
+        "11:00 AM - Little Adam&apos;s Peak hike",
         "1:00 PM - Local lunch",
         "3:00 PM - Tea plantation tour",
         "5:00 PM - Scenic train journey"

@@ -73,7 +73,7 @@ const ServicesSection = () => {
             id: 1,
             title: "Airport ↔ Colombo",
             subtitle: "City Hotels & Business District",
-            description: "Direct transfer to Colombo's main hotel areas including Fort, Kollupitiya, and Bambalapitiya.",
+            description: "Direct transfer to Colombo&apos;s main hotel areas including Fort, Kollupitiya, and Bambalapitiya.",
             distance: "35 km",
             duration: "45-60 min",
 
@@ -85,7 +85,7 @@ const ServicesSection = () => {
             id: 2,
             title: "Airport ↔ Negombo",
             subtitle: "Beach Hotels & Resorts",
-            description: "Quick transfer to Negombo's beautiful beaches and resort areas, perfect for immediate relaxation.",
+            description: "Quick transfer to Negombo&apos;s beautiful beaches and resort areas, perfect for immediate relaxation.",
             distance: "12 km",
             duration: "20-25 min",
 
@@ -386,7 +386,7 @@ const ServicesSection = () => {
                                     <Phone size={32} className="mx-auto mb-3" />
                                     <h4 className="text-2xl font-bold mb-2">Need a Custom Transfer?</h4>
                                     <p className="text-cyan-100 mb-6 max-w-2xl mx-auto">
-                                        We're available 24/7 to take you anywhere in Sri Lanka. Let us know your needs and we'll arrange it.
+                                        We&apos;re available 24/7 to take you anywhere in Sri Lanka. Let us know your needs and we&apos;ll arrange it.
                                     </p>
                                     <button className="bg-white text-cyan-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors duration-300">
                                         Get Custom Quote

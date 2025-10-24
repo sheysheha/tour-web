@@ -594,7 +594,7 @@ const TransferQuotePage = () => {
               </div>
               <h3 className="text-2xl font-bold text-gray-800 mb-2">Quote Submitted!</h3>
               <p className="text-gray-600 mb-6">
-                Thank you for your transfer request. We'll send you a detailed quote within 2 hours.
+                Thank you for your transfer request. We&apos;ll send you a detailed quote within 2 hours.
               </p>
 
               <div className="bg-gray-50 rounded-lg p-4 mb-6 text-left">
