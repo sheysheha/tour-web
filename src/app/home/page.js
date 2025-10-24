@@ -92,7 +92,7 @@ export default function Home() {
     id: 1,
     country: 'Lap Lanka Tours',
     tagline: 'Discover Sri Lanka with Experts',
-    description: 'Welcome to Lap Lanka Tours — your gateway to exploring Sri Lanka&apos;s hidden gems, cultural wonders, and breathtaking landscapes. Let&apos;s create unforgettable memories together!',
+    description: "Welcome to Lap Lanka Tours — your gateway to exploring Sri Lanka's hidden gems, cultural wonders, and breathtaking landscapes. Let's create unforgettable memories together!",
     image: '/ella-train.jpg',
     color: 'from-green-500 to-emerald-500'
   },
@@ -100,7 +100,7 @@ export default function Home() {
     id: 2,
     country: 'Sigiriya',
     tagline: 'Climb the Iconic Lion Rock Fortress',
-    description: 'Discover ancient engineering and breathtaking views atop Sri Lanka&apos;s most legendary monument.',
+    description: "Discover ancient engineering and breathtaking views atop Sri Lanka's most legendary monument.",
     image: '/sigiya-solo-traveler.jpg',
     color: 'from-orange-500 to-red-500'
   },
@@ -124,7 +124,7 @@ export default function Home() {
     id: 5,
     country: 'Colombo',
     tagline: 'Where Culture Meets the Capital',
-    description: 'Uncover bustling markets, colonial charm, and modern life in Sri Lanka&apos;s vibrant capital.',
+    description: "Uncover bustling markets, colonial charm, and modern life in Sri Lanka's vibrant capital.",
     image: '/colombo-sri-lanka.jpg',
     color: 'from-pink-500 to-red-500'
   },
@@ -145,6 +145,7 @@ export default function Home() {
     color: 'from-teal-500 to-blue-600'
   },
 ];
+
 
 
 
@@ -324,7 +325,7 @@ useEffect(() => {
                   }`}>
                   <h2 className="text-6xl md:text-8xl font-bold mb-2 tracking-tight">{item.country}</h2>
                   <p className="text-2xl md:text-3xl font-medium mb-4">{item.tagline}</p>
-                  <p className="text-xl max-w-2xl mx-auto mb-8">{item.description}</p>
+                  <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8">{item.description}</p>
                   <button className="mt-4 bg-white opacity-80 text-gray-800 hover:bg-white hover:opacity-100 transition-colors px-8 py-3 rounded-full font-bold shadow-lg transform hover:scale-105 transition-transform">
                     Explore {item.country}
                   </button>

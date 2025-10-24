@@ -47,7 +47,7 @@ const ExcursionPage = () => {
       includes: ["Transportation", "English Guide", "Entrance Fees", "Lunch"],
       groupSize: "2-15 people",
       duration_detail: "10 hours",
-      description: "Explore Sri Lanka&apos;s most iconic archaeological sites including the legendary Sigiriya Rock Fortress and the ancient Dambulla Cave Temple complex.",
+      description: "Explore Sri Lanka's most iconic archaeological sites including the legendary Sigiriya Rock Fortress and the ancient Dambulla Cave Temple complex.",
       itinerary: [
         "6:00 AM - Hotel pickup from Colombo",
         "9:30 AM - Arrive at Dambulla Cave Temple",
@@ -72,7 +72,7 @@ const ExcursionPage = () => {
       includes: ["Transportation", "Guide", "All Entrances", "Cultural Show"],
       groupSize: "2-20 people",
       duration_detail: "9 hours",
-      description: "Immerse yourself in Sri Lanka&apos;s cultural heart with visits to sacred temples, lush gardens, and traditional performances.",
+      description: "Immerse yourself in Sri Lanka's cultural heart with visits to sacred temples, lush gardens, and traditional performances.",
       itinerary: [
         "7:00 AM - Depart from Colombo",
         "10:00 AM - Temple of the Tooth Relic",
@@ -97,7 +97,7 @@ const ExcursionPage = () => {
       includes: ["4WD Safari Vehicle", "Professional Guide", "Park Fees", "Refreshments"],
       groupSize: "2-6 people",
       duration_detail: "8 hours",
-      description: "Embark on an unforgettable safari through Sri Lanka&apos;s most famous national park, home to the world&apos;s highest density of leopards.",
+      description: "Embark on an unforgettable safari through Sri Lanka's most famous national park, home to the world's highest density of leopards.",
       itinerary: [
         "5:30 AM - Early morning pickup",
         "6:30 AM - First safari session",
@@ -118,15 +118,15 @@ const ExcursionPage = () => {
       reviews: 201,
       image: "/api/placeholder/400/250",
       location: "Ella",
-      highlights: ["Nine Arch Bridge", "Little Adam&apos;s Peak", "Tea Plantations", "Scenic Train Ride"],
+      highlights: ["Nine Arch Bridge", "Little Adams Peak", "Tea Plantations", "Scenic Train Ride"],
       includes: ["Transportation", "Guide", "Train Tickets", "Hiking"],
       groupSize: "2-12 people",
       duration_detail: "11 hours",
-      description: "Discover the breathtaking beauty of Sri Lanka&apos;s hill country with stunning vistas, colonial architecture, and lush tea estates.",
+      description: "Discover the breathtaking beauty of Sri Lankas hill country with stunning vistas, colonial architecture, and lush tea estates.",
       itinerary: [
         "6:00 AM - Depart to Ella",
         "9:00 AM - Nine Arch Bridge visit",
-        "11:00 AM - Little Adam&apos;s Peak hike",
+        "11:00 AM - Little Adam's Peak hike",
         "1:00 PM - Local lunch",
         "3:00 PM - Tea plantation tour",
         "5:00 PM - Scenic train journey"
@@ -147,7 +147,7 @@ const ExcursionPage = () => {
       includes: ["Transportation", "Guide", "Entrance Fees", "Lunch"],
       groupSize: "2-15 people",
       duration_detail: "9 hours",
-      description: "Explore the UNESCO World Heritage Galle Fort and enjoy the pristine beaches of Sri Lanka&apos;s southern coastline.",
+      description: "Explore the UNESCO World Heritage Galle Fort and enjoy the pristine beaches of Sri Lanka's southern coastline.",
       itinerary: [
         "7:30 AM - Colombo departure",
         "10:00 AM - Galle Fort exploration",
@@ -172,7 +172,7 @@ const ExcursionPage = () => {
       includes: ["Mountain Guide", "Accommodation", "Meals", "Transport"],
       groupSize: "2-8 people",
       duration_detail: "2 days",
-      description: "Challenge yourself with this spiritual journey to the summit of Adam&apos;s Peak for an unforgettable sunrise experience.",
+      description: "Challenge yourself with this spiritual journey to the summit of Adam's Peak for an unforgettable sunrise experience.",
       itinerary: [
         "Day 1: Arrive at base, afternoon rest",
         "11:00 PM: Begin night ascent",

@@ -27,10 +27,10 @@ const destinationsData = {
   'mountains': {
     name: 'Majestic Mountains',
     heroImage: '/mountatin-dp.jpg',
-    description: 'The central highlands of Sri Lanka are a haven for nature enthusiasts and adventure seekers. Explore misty peaks, lush tea plantations, and rich biodiversity. Hike through Horton Plains, visit the iconic Adam&apos;s Peak, or enjoy the scenic beauty of Ella&apos;s landscapes.',
+    description: "The central highlands of Sri Lanka are a haven for nature enthusiasts and adventure seekers. Explore misty peaks, lush tea plantations, and rich biodiversity. Hike through Horton Plains, visit the iconic Adam's Peak, or enjoy the scenic beauty of Ella's landscapes.",
     highlights: [
-      'Horton Plains – Home to the famous World&apos;s End cliff',
-      'Adam&apos;s Peak – Sacred pilgrimage site with panoramic views',
+      "HortonPlains – Home to the famous World's End cliff",
+      "Adam's Peak – Sacred pilgrimage site with panoramic views",
       'Ella – Picturesque town surrounded by tea estates and waterfalls'
     ],
     images: ['/mountain-village.jpg', '/tourist-looking-at-sigiriya.jpg', '/mount.jpg', '/hike-view-point.jpg', '/camping.jpg', '/rock-climbing.png'],
@@ -43,7 +43,7 @@ const destinationsData = {
   'cultural-sites': {
     name: 'Cultural Heritage Sites',
     heroImage: '/cult-dp.jpg',
-    description: 'Immerse yourself in Sri Lanka&apos;s rich history by visiting its UNESCO World Heritage Sites. Discover ancient cities, sacred temples, and colonial architecture that narrate tales of a bygone era. Experience the cultural triangle encompassing Anuradhapura, Polonnaruwa, and Kandy.',
+    description: "Immerse yourself in Sri Lanka's rich history by visiting its UNESCO World Heritage Sites. Discover ancient cities, sacred temples, and colonial architecture that narrate tales of a bygone era. Experience the cultural triangle encompassing Anuradhapura, Polonnaruwa, and Kandy.",
     highlights: [
       'Sigiriya Rock Fortress – Ancient palace atop a massive rock',
       'Temple of the Tooth – Sacred Buddhist temple in Kandy',
@@ -59,7 +59,7 @@ const destinationsData = {
   'waterfalls': {
     name: 'Enchanting Waterfalls',
     heroImage: '/waterfalls-dp.jpg',
-    description: 'Sri Lanka&apos;s diverse terrain is adorned with numerous waterfalls cascading through lush forests and tea-covered hills. From the towering Bambarakanda Falls to the scenic Ravana Falls, these natural wonders offer breathtaking views and refreshing experiences.',
+    description: "Sri Lanka's diverse terrain is adorned with numerous waterfalls cascading through lush forests and tea-covered hills. From the towering Bambarakanda Falls to the scenic Ravana Falls, these natural wonders offer breathtaking views and refreshing experiences.",
     highlights: [
       'Bambarakanda Falls – Tallest waterfall in Sri Lanka at 263 meters',
       'Ravana Falls – Easily accessible and steeped in legend',

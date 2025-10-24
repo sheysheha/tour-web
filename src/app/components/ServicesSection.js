@@ -73,7 +73,7 @@ const ServicesSection = () => {
             id: 1,
             title: "Airport ↔ Colombo",
             subtitle: "City Hotels & Business District",
-            description: "Direct transfer to Colombo&apos;s main hotel areas including Fort, Kollupitiya, and Bambalapitiya.",
+            description: "Direct transfer to Colombo's main hotel areas including Fort, Kollupitiya, and Bambalapitiya.",
             distance: "35 km",
             duration: "45-60 min",
 
@@ -85,7 +85,7 @@ const ServicesSection = () => {
             id: 2,
             title: "Airport ↔ Negombo",
             subtitle: "Beach Hotels & Resorts",
-            description: "Quick transfer to Negombo&apos;s beautiful beaches and resort areas, perfect for immediate relaxation.",
+            description: "Quick transfer to Negombo's beautiful beaches and resort areas, perfect for immediate relaxation.",
             distance: "12 km",
             duration: "20-25 min",
 
