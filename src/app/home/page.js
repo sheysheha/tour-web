@@ -323,9 +323,9 @@ useEffect(() => {
               <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4 z-10">
                 <div className={`transform transition-all duration-700 ease-in-out ${index === currentSlide ? 'translate-y-0 opacity-100 delay-300' : 'translate-y-10 opacity-0'
                   }`}>
-                  <h2 className="text-6xl md:text-8xl font-bold mb-2 tracking-tight">{item.country}</h2>
-                  <p className="text-2xl md:text-3xl font-medium mb-4">{item.tagline}</p>
-                  <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8">{item.description}</p>
+                  <h2 className="text-5xl md:text-8xl font-bold mb-2 tracking-tight">{item.country}</h2>
+                  <p className="text-xl md:text-3xl font-medium mb-4">{item.tagline}</p>
+                  <p className=" text-sm md:text-xl max-w-2xl mx-auto mb-2 md:mb-8">{item.description}</p>
                   <button className="mt-4 bg-white opacity-80 text-gray-800 hover:bg-white hover:opacity-100 transition-colors px-8 py-3 rounded-full font-bold shadow-lg transform hover:scale-105 transition-transform">
                     Explore {item.country}
                   </button>
