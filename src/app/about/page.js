@@ -311,7 +311,7 @@ const AboutPage = () => {
                 </div>
               </div>
               <p className="text-gray-600 italic mb-6">
-                "Our two-week adventure with LAP Lanka Tours was absolutely magical. The attention to detail and personalized service made us feel like VIPs throughout our journey."
+                &quot;Our two-week adventure with LAP Lanka Tours was absolutely magical. The attention to detail and personalized service made us feel like VIPs throughout our journey.&quot;
               </p>
               <div className=" flex items-center">
                 <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
@@ -334,7 +334,7 @@ const AboutPage = () => {
                 </div>
               </div>
               <p className="text-gray-600 italic mb-6">
-                "The cultural insights provided by our guide Amal were incredible. We left with not just photos but a deep appreciation for Sri Lankan heritage."
+                &quot;The cultural insights provided by our guide Amal were incredible. We left with not just photos but a deep appreciation for Sri Lankan heritage.&quot;
               </p>
               <div className=" flex items-center">
                 <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
@@ -357,7 +357,7 @@ const AboutPage = () => {
                 </div>
               </div>
               <p className="text-gray-600 italic mb-6">
-                "As a solo female traveler, safety was my priority. LAP Lanka Tours made me feel secure while still providing authentic adventures off the beaten path."
+                &quot;As a solo female traveler, safety was my priority. LAP Lanka Tours made me feel secure while still providing authentic adventures off the beaten path.&quot;
               </p>
               <div className=" flex items-center">
                 <div className="w-12 h-12 rounded-full overflow-hidden mr-4">

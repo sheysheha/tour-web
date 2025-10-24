@@ -731,7 +731,7 @@ const ExcursionPage = () => {
                 <span className="ml-2 text-sm text-gray-600">2 days ago</span>
               </div>
               <p className="text-gray-700 mb-4">
-                "The Sigiriya tour was absolutely incredible! Our guide was knowledgeable and the views from the top were breathtaking. Highly recommend!"
+                &quot;The Sigiriya tour was absolutely incredible! Our guide was knowledgeable and the views from the top were breathtaking. Highly recommend!&quot;
               </p>
               <div className="flex items-center">
                 <div className="w-10 h-10 bg-cyan-200 rounded-full flex items-center justify-center">
@@ -754,7 +754,7 @@ const ExcursionPage = () => {
                 <span className="ml-2 text-sm text-gray-600">1 week ago</span>
               </div>
               <p className="text-gray-700 mb-4">
-                "Amazing whale watching experience in Mirissa! We saw blue whales and dolphins. The boat crew was professional and safety-conscious."
+                &quot;Amazing whale watching experience in Mirissa! We saw blue whales and dolphins. The boat crew was professional and safety-conscious.&quot;
               </p>
               <div className="flex items-center">
                 <div className="w-10 h-10 bg-cyan-200 rounded-full flex items-center justify-center">
@@ -777,7 +777,7 @@ const ExcursionPage = () => {
                 <span className="ml-2 text-sm text-gray-600">2 weeks ago</span>
               </div>
               <p className="text-gray-700 mb-4">
-                "The cultural tour of Kandy was perfect! The Temple of the Tooth was magnificent and the tea plantation visit was educational and fun."
+                &quot;The cultural tour of Kandy was perfect! The Temple of the Tooth was magnificent and the tea plantation visit was educational and fun.&quot;
               </p>
               <div className="flex items-center">
                 <div className="w-10 h-10 bg-cyan-200 rounded-full flex items-center justify-center">
