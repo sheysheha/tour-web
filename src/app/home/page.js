@@ -399,7 +399,7 @@ useEffect(() => {
                 <MapPin className="text-blue-600" size={32} />
               </div>
               <h3 className="text-lg font-semibold mb-2 text-gray-800">Local Expertise</h3>
-              <p className="text-sm text-gray-600">Guided by locals who know every hidden gem of Sri Lanka.</p>
+              <p className="text-sm text-gray-600">Guided by local chauffeur who know every hidden gem of Sri Lanka.</p>
             </div>
 
             <div className="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow hover:shadow-2xl transition-transform hover:scale-105">

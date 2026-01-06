@@ -167,7 +167,7 @@ const AboutPage = () => {
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2">
                 <div className="relative overflow-hidden">
                   <Image
-                    src="/samanthaperera.png"
+                    src="/sam.jpeg"
                     alt="Samantha Perera - Founder & CEO"
                     width={480}
                     height={320}
@@ -273,7 +273,7 @@ const AboutPage = () => {
             </div>
 
             <div className="p-6">
-              <div className="text-5xl font-bold mb-2">15+</div>
+              <div className="text-5xl font-bold mb-2">35+</div>
               <div className="text-cyan-100 uppercase tracking-wider text-sm">Years Experience</div>
             </div>
 
@@ -334,7 +334,7 @@ const AboutPage = () => {
                 </div>
               </div>
               <p className="text-gray-600 italic mb-6">
-                &quot;The cultural insights provided by our guide Amal were incredible. We left with not just photos but a deep appreciation for Sri Lankan heritage.&quot;
+                &quot;The cultural insights provided by our guide Sam were incredible. We left with not just photos but a deep appreciation for Sri Lankan heritage.&quot;
               </p>
               <div className=" flex items-center">
                 <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
